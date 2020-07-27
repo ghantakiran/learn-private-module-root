@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "app.terraform.io/SplunkAWS/s3-webapp/aws"
+  source  = "app.terraform.io/SplunkAWS/module-aws-s3-webapp/private"
   name        = var.name
   region = var.region
   prefix = var.prefix
-  version = "1.0.0"
+  version = "2.0.0"
 }
